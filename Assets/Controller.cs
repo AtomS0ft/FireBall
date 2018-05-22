@@ -40,7 +40,7 @@ public class Controller : MonoBehaviour {
 				RaycastHit hit;
 				if (Physics.Raycast (transform.position, new Vector3 (0.6f, 1f, 0), out hit)) {
 					Debug.DrawLine (transform.position, hit.point, Color.red, 999f);
-					Debug.Log(hit.distance);
+					//Debug.Log(hit.distance);
 					connected_point = hit.point;
 					connected = true;
 					//Debug.Log(hit.rigidbody.gameObject.name);
